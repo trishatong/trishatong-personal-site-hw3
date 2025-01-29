@@ -102,15 +102,40 @@
                     <input type="text" id="lname" name="lname"><br><br>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email"><br><br>
+                    <label for="location">where are you from?</label>
+                    <select  name="locations" id="locations">
+                        <option value="" disabled selected></option>
+                        <optgroup label="Southern CA">
+                            <option value="san-diego">San Diego</option>
+                            <option value="orange-county">Orange County</option>
+                            <option value="los-angeles">Los Angeles</option>
+                            <option value="other-socal">Other (SoCal)</option>
+                        </optgroup>
+                        <optgroup label="Northern CA">
+                            <option value="san-francisco">San Francisco</option>
+                            <option value="san-jose">San Jose</option>
+                            <option value="palo-alto">Palo Alto</option>
+                            <option value="mountain-view">Mountain View</option>
+                            <option value="other-norcal">Other (NorCal)</option>
+                        </optgroup>
+                        <optgroup label="Other (U.S.)">
+                            <option value="west">West</option> 
+                            <option value="west">MidWest</option> 
+                            <option value="west">SouthWest</option> 
+                            <option value="west">SouthEast</option>
+                            <option value="west">NorthEast</option>
+                        </optgroup>
+                    </select><br><br>
                     <label for="user-type">Select which best applies to you:</label>
                     <select name="user-types" id="user-type">
-                        <option value="" disabled selected>no</option>
+                        <option value="" disabled selected></option>
                         <option value="recruiter">recruiter</option>
                         <option value="student">student</option>
                         <option value="other">other</option>
                     </select><br><br>
-                    <textarea id="user-question" name="user-question" rows="4" cols="50">leave your question here...</textarea>
-                    <input type="submit" value="submit">
+                    <textarea id="user-question" name="user-question" rows="4" cols="50">leave your question here...</textarea><br>
+                    <!-- <input type="submit" value="submit"> -->
+                    <button type="submit">submit</button>
                 </fieldset>
             </form>
         </div>
