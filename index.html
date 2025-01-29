@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Trisha Tong's Site</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -18,9 +19,15 @@
         <section>
             <h1>welcome to my website!</h1>
         </section>
+        <picture>
+            <!-- CHANGE THE IMG -->
+            <source media="(min-width:650px)" srcset="hot-air-balloon.jpg">                 
+            <source media="(min-width:465px)" srcset="hot-air-balloon.jpg">
+            <img src="hot-air-balloon.jpg" alt="hot air balloon">
+        </picture>          
         <section id="about">
             <h2>about me</h2>
-            <p>Hi, I'm Trisha Tong! I'm currently a senior at the University of California, San Diego 
+            <p>Hi, I'm Trisha Tong! I'm currently a senior at the <em>University of California, San Diego</em> 
                 majoring in Computer Science and minoring in Business. I have built a strong foundation 
                 in software engineering through my education and project experience. My background 
                 includes working with various programming languages, including Python, Java, and 
@@ -31,28 +38,100 @@
                 These experiences have helped me adapt to fast-environments and deliver quality software 
                 solutions. I'm eager to join a company that will help me fulfill my career ambition to integrate 
                 technology with human-focused solutions.</p>
+            <aside>
+                <h3>quick skills highlight</h3>
+                <ul>
+                    <li><strong>programming languages:</strong> Java, Python, JavaScript, HTML, CSS, C, C++</li>
+                    <li><strong>frameworks/technologies:</strong> Node.js, React Native, Astro</li>
+                    <li><strong>development tools/practices:</strong>Visual Studio Code, Linux (Ubuntu), Git, Agile 
+                        Methodologies</li>
+                </ul>
+            </aside>
         </section>
         <section>
             <h2>currently, I'm...</h2>
             <p><i>what am i working on?</i></p>
             <article>
                 <h3>learning as a software engineering apprentice @ <b>Fiber Mountain</b></h3>
-                <ol>
-                    <li>acquiring hands-on experience with Node.js</li>
-                    <li>developing proficiency in API integration and management</li>
-                    <li>gaining practical knowledge in network configurations, VirtualBox, and Ubuntu</li>
-                </ol>
+                <details>
+                    <summary>learn more</summary>
+                    <ol>
+                        <li>acquiring hands-on experience with <code>Node.js</code></li>
+                        <li>developing proficiency in API integration and management</li>
+                        <li>gaining practical knowledge in network configurations, VirtualBox, and Ubuntu</li>
+                    </ol>
+                </details>
             </article>
             <article>
                 <h3>working as a web developer @ <b>TEDxUCSD</b></h3>
-                <ol>
-                    <li>improving and maintaining TEDxUCSD website</li>
-                    <li>managing, editing, and curating media content</li>
-                </ol>
+                <details>
+                    <summary>learn more</summary>
+                    <ol>
+                        <li>improving and maintaining <span>TEDxUCSD</span> website</li>
+                        <li>managing, editing, and curating media content</li><br> <!-- delete br? -->
+                        <iframe src="https://tedxucsd.com/" title="TEDxUCSD"></iframe>
+                    </ol>
+                </details>
             </article>
         </section>
+        <!-- show a picture depending on what the user selects -->
+        <section>
+            <h2>even more about me!</h2>
+            <label for="interest-choice">choose a topic:</label>
+            <input type="text" id="interest-choice" name="interest-choice" list="interests">
+            <datalist id="interests">
+                <option value="beach">
+                <option value="hiking">
+                <option value="volleyball">
+            </datalist>
+            <img id="topicImage" src="" alt="Selected Topic Image" style="display:none; width:200px;">
+
+        </section>  
     </main>
+    <hr>
     <footer>
+        <div>
+            <!-- ADD ACTION PAGE? -->
+            <h3>questions? leave me your name! :D</h3>
+            <form action="/action_page.php" method="get">
+                <fieldset>
+                    <legend>contact info:</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="user-type">Select which best applies to you:</label>
+                    <select name="user-types" id="user-type">
+                        <option value="empty"> </option>
+                        <option value="recruiter">recruiter</option>
+                        <option value="student">student</option>
+                        <option value="other">other</option>
+                    </select><br><br>
+                    <textarea id="user-question" name="user-question" rows="4" cols="50">leave your question here...</textarea>
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
+        </div>
+        <div id="social-media">
+            <a href="http://facebook.com">Facebook</a> |
+            <a href="http://twitter.com">Twitter</a> |
+            <a href="http://instagram.com">Instagram</a>
+        </div>
+        <div id="smiley face">
+            <pre>
+                .-''''''''''-.
+              .'               '.
+             /                   \
+            |    O         O     |
+            |                     |
+             \       '---'       /
+              '.               .'
+                '-...........-'
+            </pre>
+         
+        </div>
     </footer>
 </body>
 </html>
