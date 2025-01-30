@@ -19,15 +19,15 @@
               <li><a href="#about">about</a></li>
             </ul>
         </nav>
-        <search>
-            <!-- ADD SERACH -->
-            <form action="./search/">
-              <label for="topic">?</label>
-              <input type="search" id="topic" name="q" />
-              <button type="submit">search</button>
-            </form>
-          </search>
     </header>
+    <search>
+        <!-- ADD SERACH -->
+        <form action="./search/">
+          <label for="topic">?</label>
+          <input type="search" id="topic" name="q"/>
+          <button type="submit">search</button>
+        </form>
+      </search>
     <main>
         <section>
             <h1>welcome to my website!</h1>
@@ -50,6 +50,7 @@
                 ctx.fillRect(20, 20, 150, 50);
             </script>
         </section>
+        <dialog open>another random box</dialog>
         <!-- END OF CHECK --> 
 
         <figure>
@@ -63,18 +64,20 @@
         </figure>
                    
         <section id="about">
-            <h2>about me</h2>
-            <p>Hi, I'm Trisha Tong! I'm currently a senior at the <em>University of California, San Diego</em> 
-                majoring in <ins>Computer Science</ins> and minoring in <ins>Business</ins>. I have built a strong foundation 
-                in software engineering through my education and project experience. My background 
-                includes working with various programming languages, including Python, Java, and 
-                JavaScript, and key software engineering principles (i.e. Agile). I also have 
-                familiarity with environments and tools like Git and JUnit, and am continuing to learn 
-                more about APIs (i.e. using Postman) and networking. Through collaborative and individual projects, 
-                I have honed my ability to work effectively in both team-based and independent settings. 
-                These experiences have helped me adapt to fast-environments and deliver quality software 
-                solutions. I'm eager to join a company that will help me fulfill my career ambition to integrate 
-                technology with human-focused solutions.</p>
+            <hgroup>
+                <h2>about me</h2>
+                <p>Hi, I'm Trisha Tong! I'm currently a senior at the <em>University of California, San Diego</em> 
+                    majoring in <ins>Computer Science</ins> and minoring in <ins>Business</ins>. I have built a strong foundation 
+                    in software engineering through my education and project experience. My background 
+                    includes working with various programming languages, including Python, Java, and 
+                    JavaScript, and key software engineering principles (i.e. Agile). I also have 
+                    familiarity with environments and tools like Git and JUnit, and am continuing to learn 
+                    more about APIs (i.e. using Postman) and networking. Through collaborative and individual projects, 
+                    I have honed my ability to work effectively in both team-based and independent settings. 
+                    These experiences have helped me adapt to fast-environments and deliver quality software 
+                    solutions. I'm eager to join a company that will help me fulfill my career ambition to integrate 
+                    technology with human-focused solutions.</p>
+            </hgroup>
             <aside>
                 <h3>quick skills highlight</h3>
                 <ul>
@@ -97,6 +100,7 @@
                         <li>developing proficiency in API integration and management</li>
                         <li>gaining practical knowledge in network configurations, VirtualBox, and Ubuntu</li>
                     </ol>
+                    <p><dfn>Fiber Mountain</dfn> aims to optimize data center management through secure and automated software solutions.</p>
                 </details>
             </article>
             <article>
@@ -180,6 +184,20 @@
             <img id="interest-image" src="hot-air-balloon.jpg" alt="Selected Topic Image" style="display:none; width:200px;"> <!-- change src -->
             <p>senior year has been <del>difficult</del> <del>sad</del> <del>scary</del> bittersweet but i'm enjoying every bit of it!</p>
         </section>  
+        <section>
+            <h2>tldr:</h2>
+            <dl>
+                <dt>STUDENT</dt>
+                <dd>4th-year CS major @ UCSD</dd>
+                <dt>CAREER</dt>
+                <dd>aspiring <abbr title="software engineer">SWE</abbr></dd>
+                <dt>WORDS TO DESCRIBE ME</dt>
+                <dd>persevering, diligent, thoughtful</dd>
+              </dl>
+        </section><br>
+        <p>to reload the page, press <kbd>Ctrl</kbd> + <kbd>r</kbd></p>
+        <noscript>your browser either does not support JavaScript or JavaScript is disabled!</noscript>
+
     </main>
     <hr>
     <footer>
@@ -231,6 +249,12 @@
                     <button type="submit">submit</button>
                 </fieldset>
             </form>
+        </div>
+        <div>
+            <address>
+                written by <a href="mailto:trishahtong@gmail.com">trisha tong</a><br> 
+                UCSD: <a href="https://ucsd.edu/">ucsd.edu</a>, 9500 Gilman Dr, La Jolla, CA 92093<br>
+            </address>
         </div>
         <div id="social-media">
             <a href="http://facebook.com">Facebook</a> |
