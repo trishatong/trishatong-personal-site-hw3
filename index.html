@@ -19,6 +19,14 @@
               <li><a href="#about">about</a></li>
             </ul>
         </nav>
+        <search>
+            <!-- ADD SERACH -->
+            <form action="./search/">
+              <label for="topic">?</label>
+              <input type="search" id="topic" name="q" />
+              <button type="submit">search</button>
+            </form>
+          </search>
     </header>
     <main>
         <section>
@@ -32,6 +40,7 @@
         </template>
 
         <section>
+            <h3>random box: </h3>
             <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
             </canvas>
             <script>
@@ -43,16 +52,20 @@
         </section>
         <!-- END OF CHECK --> 
 
-        <picture>
-            <!-- CHANGE THE IMG -->
-            <source media="(min-width:650px)" srcset="hot-air-balloon.jpg">                 
-            <source media="(min-width:465px)" srcset="hot-air-balloon.jpg">
-            <img src="hot-air-balloon.jpg" alt="hot air balloon">
-        </picture>          
+        <figure>
+            <picture>
+                <!-- CHANGE THE IMG -->
+                <source media="(min-width:650px)" srcset="hot-air-balloon.jpg">                 
+                <source media="(min-width:465px)" srcset="hot-air-balloon.jpg">
+                <img src="hot-air-balloon.jpg" alt="hot air balloon">
+            </picture>   
+            <figcaption>hot air balloon!</figcaption>
+        </figure>
+                   
         <section id="about">
             <h2>about me</h2>
             <p>Hi, I'm Trisha Tong! I'm currently a senior at the <em>University of California, San Diego</em> 
-                majoring in Computer Science and minoring in Business. I have built a strong foundation 
+                majoring in <ins>Computer Science</ins> and minoring in <ins>Business</ins>. I have built a strong foundation 
                 in software engineering through my education and project experience. My background 
                 includes working with various programming languages, including Python, Java, and 
                 JavaScript, and key software engineering principles (i.e. Agile). I also have 
@@ -95,6 +108,16 @@
                         <li>managing, editing, and curating media content</li>
                     </ol>
                     <iframe src="https://tedxucsd.com/" title="TEDxUCSD"></iframe>
+                    <blockquote cite="https://www.ted.com/about">
+                        <p>"Discover and spread ideas that spark conversation, deepen understanding, and drive 
+                            meaningful change."</p>
+                        <cite>Mission Statement, TED</cite>
+                    </blockquote>
+                    <blockquote cite="https://www.ted.com/participate/organize-a-local-tedx-event/before-you-start/tedx-rules">
+                        <p>"In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a 
+                            program of local, self-organized events that bring people together to share a TED-like experience."</p>
+                        <cite>What is TEDx?, TED</cite>
+                    </blockquote>
                 </details>
             </article>
         </section>
@@ -155,7 +178,7 @@
                 <option value="volleyball">
             </datalist>
             <img id="interest-image" src="hot-air-balloon.jpg" alt="Selected Topic Image" style="display:none; width:200px;"> <!-- change src -->
-
+            <p>senior year has been <del>difficult</del> <del>sad</del> <del>scary</del> bittersweet but i'm enjoying every bit of it!</p>
         </section>  
     </main>
     <hr>
