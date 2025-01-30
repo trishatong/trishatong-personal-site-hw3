@@ -19,20 +19,24 @@
               <li><a href="#about">about</a></li>
             </ul>
         </nav>
-        <search>
-            <!-- ADD SERACH -->
+        <!-- <search>
             <form action="./search/">
               <label for="topic">?</label>
               <input type="search" id="topic" name="q">
               <button type="submit">search</button>
             </form>
-        </search>
+        </search> -->
     </header>
     <main>
         <section>
             <h1>welcome to my website!</h1>
         </section>
-
+        <p>want to listen to rain sounds while you read?</p>
+        <audio controls>
+            <source src="rain.mpg" type="audio/mpeg">
+            <source src="rain.mp4" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
         <!-- CHECK THIS SECTION -->
         <template id="background-color">
             <p>snoopy says hi</p>
@@ -40,7 +44,7 @@
         </template>
 
         <section>
-            <h3>random box: </h3>
+            <h3>random boxes: </h3>
             <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
             </canvas>
             <script>
@@ -51,13 +55,16 @@
             </script>
         </section>
         <dialog open>another random box</dialog>
+        <svg width="200" height="100">
+            <rect width="150" height="100" fill="lavender" />
+        </svg>
         <!-- END OF CHECK --> 
 
         <figure>
             <picture>
-                <!-- CHANGE THE IMG -->
-                <source media="(min-width:650px)" srcset="hot-air-balloon.jpg">                 
-                <source media="(min-width:465px)" srcset="hot-air-balloon.jpg">
+                <source media="(min-width:480px)" srcset="hot-air-balloon-lg.jpg">                 
+                <source media="(min-width:400px)" srcset="hot-air-balloon-med.jpg">
+                <source media="(min-width:300px)" srcset="hot-air-balloon-sm.jpg">
                 <img src="hot-air-balloon.jpg" alt="hot air balloon">
             </picture>   
             <figcaption>hot air balloon!</figcaption>
@@ -181,7 +188,11 @@
                 <option value="hiking">
                 <option value="volleyball">
             </datalist>
-            <img id="interest-image" src="hot-air-balloon.jpg" alt="Selected Topic Image" style="display:none; width:200px;"> <!-- change src -->
+            <img id="interest-image" src="hot-air-balloon.jpg" alt="Selected Topic Image" style="display:none; width:200px;"><br><br> <!-- change src -->
+            <video width="216" height="384" controls> <!-- original: 720x1280 -->
+                <source src="mt-tam.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <p>senior year has been <del>difficult</del> <del>sad</del> <del>scary</del> bittersweet but i'm enjoying every bit of it!</p>
         </section>  
         <section>
