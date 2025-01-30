@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Trisha Tong's Site</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
 </head>
 <body>
     <header>
@@ -19,6 +24,26 @@
         <section>
             <h1>welcome to my website!</h1>
         </section>
+
+        <!-- CHECK THIS SECTION -->
+        <template id="background-color">
+            <p>snoopy says hi</p>
+            <img src="snoopy.jpg" alt="snoopy">
+        </template>
+
+        <section>
+            <h2>My Graphic Work</h2>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+            </canvas>
+            <script>
+                var canvas = document.getElementById('myCanvas');
+                var ctx = canvas.getContext('2d');
+                ctx.fillStyle = "#C8A2C8";
+                ctx.fillRect(20, 20, 150, 50);
+            </script>
+        </section>
+        <!-- END OF CHECK --> 
+
         <picture>
             <!-- CHANGE THE IMG -->
             <source media="(min-width:650px)" srcset="hot-air-balloon.jpg">                 
@@ -74,6 +99,47 @@
                 </details>
             </article>
         </section>
+        <section>
+            <h2>some of my projects</h2>
+            <caption>my projects</caption>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Languages</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>Blackjack</td>
+                    <td>Python</td>
+                    <td>Implementation of Monte Carlo policy evaluation, Temporal Difference policy evaluation, and Q
+                        Learning for Blackjack.</td>
+                  </tr>
+                  <tr>
+                    <td>Gym App</td>
+                    <td>React Native</td>
+                    <td>A mobile app that allows the user to track and view data related to exercise routines, fitness 
+                        goals, and diet.</td>
+                  </tr>
+                  <tr>
+                    <td>Tarot Card Fortune Teller</td>
+                    <td>JavaScript, CSS, HTML</td>
+                    <td>Worked as a developer in this team project simulating a tarot card fortune teller. Utilized GitHub 
+                        and followed Agile methodology.</td>
+                  </tr>
+                  <tr>
+                    <td>Huffman Coding</td>
+                    <td>C++</td>
+                    <td>Project consisting of compressing/decompressing programs that take an input file, uses Huffman 
+                        Compression to create a compressed version of the file, then subsequently uncompresses it.</td>
+                  </tr>
+                  <tr>
+                    <td>Cipher</td>
+                    <td>C, Assembly</td>
+                    <td>File encryption/decryption program that encrypts/decrypts any type of file using a combination of 
+                        per byte bit manipulation and an exclusive or encoding using sequence of bytes from a book file.</td>
+                  </tr>
+            </table>
+        </section>        
         <!-- show a picture depending on what the user selects -->
         <section>
             <h2>even more about me!</h2>
@@ -102,7 +168,7 @@
                     <input type="text" id="lname" name="lname"><br><br>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email"><br><br>
-                    <label for="location">where are you from?</label>
+                    <label for="locations">where are you from?</label>
                     <select  name="locations" id="locations">
                         <option value="" disabled selected></option>
                         <optgroup label="Southern CA">
