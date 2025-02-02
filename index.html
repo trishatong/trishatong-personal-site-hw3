@@ -14,11 +14,11 @@
     <header>
         <nav>
             <ul>
-              <li><a href="#home">home</a></li>
-              <li><a href="#projects">projects</a></li>
-              <li><a href="#experiments">experiments</a></li>
-              <li><a href="#blog">blog</a></li>
-              <li><a href="#about">about</a></li>
+              <li><a href="index.html">home</a></li>
+              <li><a href="projects.html">projects</a></li>
+              <li><a href="experiments.html">experiments</a></li>
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="about.html">about</a></li>
             </ul>
         </nav>
         <search>
@@ -35,16 +35,16 @@
         </section>
         <p>want to listen to rain sounds while you read?</p>
         <audio controls>
-            <source src="rain.mpg" type="audio/mpeg">
-            <source src="rain.mp4" type="audio/mp4">
+            <source src="media/audio/rain.mpg" type="audio/mpeg">
+            <source src="media/audio/rain.mp4" type="audio/mp4">
             Your browser does not support the audio element.
         </audio><br>
         <custom-box>Custom content with structural styling</custom-box><br>
         <hello-world>Hello, world!</hello-world>
-        <!-- CHECK THIS SECTION -->
+
         <template id="background-color">
             <p>snoopy says hi</p>
-            <img src="snoopy.jpg" alt="snoopy">
+            <img src="media/snoopy.jpg" alt="snoopy">
         </template>
 
         <section>
@@ -64,14 +64,13 @@
                 <rect width="150" height="100" fill="lavender" />
             </svg>
         </span>
-        <!-- END OF CHECK --> 
 
         <figure>
             <picture>
-                <source media="(min-width:480px)" srcset="hot-air-balloon-lg.jpg">                 
-                <source media="(min-width:400px)" srcset="hot-air-balloon-med.jpg">
-                <source media="(min-width:300px)" srcset="hot-air-balloon-sm.jpg">
-                <img src="hot-air-balloon.jpg" alt="hot air balloon">
+                <source media="(min-width:480px)" srcset="media/images/hot-air-balloon-lg.jpg">                 
+                <source media="(min-width:400px)" srcset="media/images/hot-air-balloon-med.jpg">
+                <source media="(min-width:300px)" srcset="media/images/hot-air-balloon-sm.jpg">
+                <img src="media/images/hot-air-balloon.jpg" alt="hot air balloon">
             </picture>   
             <figcaption>hot air balloon!</figcaption>
         </figure>
@@ -137,52 +136,6 @@
                     </blockquote>
                 </details>
             </article>
-        </section>
-        <section>
-            <h2>some of my projects</h2>
-            <table>
-                <caption>MY PROJECTS</caption>
-                <colgroup>
-                    <col style="background-color: #e3e1e3;">
-                    <col style="background-color: #e3e1e3;">
-                    <col style="background-color: #e8dce8;">
-                </colgroup>
-                <tr>
-                    <th>Name</th>
-                    <th>Languages</th>
-                    <th>Description</th>
-                  </tr>
-                  <tr>
-                    <td>Blackjack</td>
-                    <td>Python</td>
-                    <td>Implementation of Monte Carlo policy evaluation, Temporal Difference policy evaluation, and Q
-                        Learning for Blackjack.</td>
-                  </tr>
-                  <tr>
-                    <td>Gym App</td>
-                    <td>React Native</td>
-                    <td>A mobile app that allows the user to track and view data related to exercise routines, fitness 
-                        goals, and diet.</td>
-                  </tr>
-                  <tr>
-                    <td>Tarot Card Fortune Teller</td>
-                    <td>JavaScript, CSS, HTML</td>
-                    <td>Worked as a developer in this team project simulating a tarot card fortune teller. Utilized GitHub 
-                        and followed Agile methodology.</td>
-                  </tr>
-                  <tr>
-                    <td>Huffman Coding</td>
-                    <td>C++</td>
-                    <td>Project consisting of compressing/decompressing programs that take an input file, uses Huffman 
-                        Compression to create a compressed version of the file, then subsequently uncompresses it.</td>
-                  </tr>
-                  <tr>
-                    <td>Cipher</td>
-                    <td>C, Assembly</td>
-                    <td>File encryption/decryption program that encrypts/decrypts any type of file using a combination of 
-                        per byte bit manipulation and an exclusive or encoding using sequence of bytes from a book file.</td>
-                  </tr>
-            </table>
         </section>        
         <!-- show a picture depending on what the user selects -->
         <section>
@@ -194,9 +147,9 @@
                 <option value="hiking">
                 <option value="volleyball">
             </datalist>
-            <img id="interest-image" src="hot-air-balloon.jpg" alt="Selected Topic Image" style="display:none; width:200px;"><br><br> <!-- change src -->
+            <img id="interest-image" src="media/images/hot-air-balloon.jpg" alt="Selected Topic Image" style="display:none; width:200px;"><br><br> <!-- change src -->
             <video width="216" height="384" controls> <!-- original: 720x1280 -->
-                <source src="mt-tam.mp4" type="video/mp4">
+                <source src="media/video/mt-tam.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p>senior year has been <del>difficult</del> <del>sad</del> <del>scary</del> bittersweet but i'm enjoying every bit of it!</p>
