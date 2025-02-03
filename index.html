@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Trisha Tong's Site</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        table, th, td {
-          border: 1px solid black;
-        }
-        </style>
+    <!-- EC meta tags for linkedin -->
+    <meta property="og:title" content="Trisha Tong's Site">
+    <meta property="og:description" content="Explore more about me and my work as a software engineer.">
+    <meta property="og:url" content="https://trishatong.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trisha Tong's Site">
+    <meta name="author" content="Trisha Tong">
 </head>
 <body>
     <header>
@@ -33,38 +35,6 @@
         <section>
             <h1>welcome to my website!</h1>
         </section>
-        <p>want to listen to rain sounds while you read?</p>
-        <audio controls>
-            <source src="media/audio/rain.mpg" type="audio/mpeg">
-            <source src="media/audio/rain.mp4" type="audio/mp4">
-            Your browser does not support the audio element.
-        </audio><br>
-        <custom-box>Custom content with structural styling</custom-box><br>
-        <hello-world>Hello, world!</hello-world>
-
-        <template id="background-color">
-            <p>snoopy says hi</p>
-            <img src="media/snoopy.jpg" alt="snoopy">
-        </template>
-
-        <section>
-            <h3>random boxes: </h3>
-            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
-            </canvas>
-            <script>
-                var canvas = document.getElementById('myCanvas');
-                var ctx = canvas.getContext('2d');
-                ctx.fillStyle = "#c8a2c8";
-                ctx.fillRect(20, 20, 150, 50);
-            </script>
-        </section>
-        <dialog open>another random box</dialog>
-        <span>
-            <svg width="200" height="100">
-                <rect width="150" height="100" fill="lavender" />
-            </svg>
-        </span>
-
         <figure>
             <picture>
                 <source media="(min-width:480px)" srcset="media/images/hot-air-balloon-lg.jpg">                 
@@ -74,32 +44,6 @@
             </picture>   
             <figcaption>hot air balloon!</figcaption>
         </figure>
-                   
-        <section id="about">
-            <hgroup>
-                <h2>about me</h2>
-                <p>Hi, I'm Trisha Tong! I'm currently a senior at the <em>University of California, San Diego</em> 
-                    majoring in <ins>Computer Science</ins> and minoring in <ins>Business</ins>. I have built a strong foundation 
-                    in software engineering through my education and project experience. My background 
-                    includes working with various programming languages, including Python, Java, and 
-                    JavaScript, and key software engineering principles (i.e. Agile). I also have 
-                    familiarity with environments and tools like Git and JUnit, and am continuing to learn 
-                    more about APIs (i.e. using Postman) and networking. Through collaborative and individual projects, 
-                    I have honed my ability to work effectively in both team-based and independent settings. 
-                    These experiences have helped me adapt to fast-environments and deliver quality software 
-                    solutions. I'm eager to join a company that will help me fulfill my career ambition to integrate 
-                    technology with human-focused solutions.</p>
-            </hgroup>
-            <aside>
-                <h3>quick skills highlight</h3>
-                <ul>
-                    <li><strong>programming languages:</strong> Java, Python, JavaScript, HTML, CSS, C, C++</li>
-                    <li><strong>frameworks/technologies:</strong> Node.js, React Native, Astro</li>
-                    <li><strong>development tools/practices:</strong> Visual Studio Code, Linux (Ubuntu), Git, Agile 
-                        Methodologies</li>
-                </ul>
-            </aside>
-        </section>
         <section>
             <h2>currently, I'm...</h2>
             <p><i>what am i working on?</i></p>
@@ -148,14 +92,10 @@
                 <option value="volleyball">
             </datalist>
             <img id="interest-image" src="media/images/hot-air-balloon.jpg" alt="Selected Topic Image" style="display:none; width:200px;"><br><br> <!-- change src -->
-            <video width="216" height="384" controls> <!-- original: 720x1280 -->
-                <source src="media/video/mt-tam.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
             <p>senior year has been <del>difficult</del> <del>sad</del> <del>scary</del> bittersweet but i'm enjoying every bit of it!</p>
         </section>  
         <section>
-            <h2>tldr:</h2>
+            <h2>briefly me:</h2>
             <dl>
                 <dt>STUDENT</dt>
                 <dd>4th-year CS major @ UCSD</dd>
@@ -163,8 +103,8 @@
                 <dd>aspiring <abbr title="software engineer">SWE</abbr></dd>
                 <dt>WORDS TO DESCRIBE ME</dt>
                 <dd>persevering, diligent, thoughtful</dd>
-              </dl>
-        </section><br>
+            </dl>
+        </section>
         <p>to reload the page, press <kbd>Ctrl</kbd> + <kbd>r</kbd></p>
         <noscript>your browser either does not support JavaScript or JavaScript is disabled!</noscript>
 
@@ -228,7 +168,7 @@
         </div>
         <div id="social-media">
             <a href="http://facebook.com">Facebook</a> |
-            <a href="http://twitter.com">Twitter</a> |
+            <a href="https://www.linkedin.com/">LinkedIn</a> |
             <a href="http://instagram.com">Instagram</a>
         </div>
         <div id="smiley-face">
