@@ -71,7 +71,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
-    padding: 0.5rem 1rem
+    padding: 0.5rem 1rem;
     border-radius: 15px; /* added this in default state for smooth change */
     transition: color 0.3s ease, background-color 0.3s ease;
 }
