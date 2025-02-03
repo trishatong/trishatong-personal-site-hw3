@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #9dbce0;
+    --secondary-color: #c5b1d1;
+    --text-color: #000000;
+    --background-color: #f9f9f9;
+}
+
+body {
+    background-color: var(--background-color, white);
+    color: var(--text-color, black);
+    font-family: 'Tajawal', Verdana, sans-serif;
+    margin: 15px;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('media/fonts/Tajawal-Regular.woff2') format('woff2'),
+         url('media/fonts/Tajawal-Regular.woff') format('woff'),
+         url('media/fonts/Tajawal-Regular.ttf') format('truetype');
+    font-weight: 400; /* regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('media/fonts/Tajawal-Bold.woff2') format('woff2'),
+         url('media/fonts/Tajawal-Bold.woff') format('woff'),
+         url('media/fonts/Tajawal-Bold.ttf') format('truetype');
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('media/fonts/Tajawal-Light.woff2') format('woff2'),
+         url('media/fonts/Tajawal-Light.woff') format('woff'),
+         url('media/fonts/Tajawal-Light.ttf') format('truetype');
+    font-weight: 300; /* light */
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: 'Tajawal', Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color, blue);
+}
+
+nav {
+    background-color: var(--primary-color, blue);
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem
+    border-radius: 15px; /* added this in default state for smooth change */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f9f9f9;
+    background-color: #ffffff33;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
