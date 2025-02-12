@@ -39,15 +39,6 @@
         <section>
             <h1>welcome to my website!</h1>
         </section>
-        <figure>
-            <picture>
-                <source media="(min-width:480px)" srcset="media/images/hot-air-balloon-lg.jpg">                
-                <source media="(min-width:400px)" srcset="media/images/hot-air-balloon-med.jpg">
-                <source media="(min-width:300px)" srcset="media/images/hot-air-balloon-sm.jpg">
-                <img src="media/images/hot-air-balloon.jpg" alt="hot air balloon">
-            </picture>  
-            <figcaption>hot air balloon!</figcaption>
-        </figure>
         <section>
             <h2>currently, I'm...</h2>
             <p><i>what am i working on?</i></p>
@@ -114,56 +105,56 @@
 
     </main>
     <hr>
+    <div>
+        <!-- ADD ACTION PAGE? -->
+        <h3>questions? leave me your name! :D</h3>
+        <form action="/action_page.php" method="get">
+            <fieldset>
+                <legend>contact info:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="locations">where are you from?</label>
+                <select  name="locations" id="locations">
+                    <option value="" disabled selected>select a location</option>
+                    <optgroup label="Southern CA">
+                        <option value="san-diego">San Diego</option>
+                        <option value="orange-county">Orange County</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="other-socal">Other (SoCal)</option>
+                    </optgroup>
+                    <optgroup label="Northern CA">
+                        <option value="san-francisco">San Francisco</option>
+                        <option value="san-jose">San Jose</option>
+                        <option value="palo-alto">Palo Alto</option>
+                        <option value="mountain-view">Mountain View</option>
+                        <option value="other-norcal">Other (NorCal)</option>
+                    </optgroup>
+                    <optgroup label="Other (U.S.)">
+                        <option value="west">West</option>
+                        <option value="west">MidWest</option>
+                        <option value="west">SouthWest</option>
+                        <option value="west">SouthEast</option>
+                        <option value="west">NorthEast</option>
+                    </optgroup>
+                </select><br><br>
+                <label for="user-type">Select which best applies to you:</label>
+                <select name="user-types" id="user-type">
+                    <option value="" disabled selected>who are you?</option>
+                    <option value="recruiter">recruiter</option>
+                    <option value="student">student</option>
+                    <option value="other">other</option>
+                </select><br><br>
+                <textarea id="user-question" name="user-question" rows="4" cols="50">leave your question here...</textarea><br>
+                <!-- <input type="submit" value="submit"> -->
+                <button type="submit">submit</button>
+            </fieldset>
+        </form>
+    </div>
     <footer>
-        <div>
-            <!-- ADD ACTION PAGE? -->
-            <h3>questions? leave me your name! :D</h3>
-            <form action="/action_page.php" method="get">
-                <fieldset>
-                    <legend>contact info:</legend>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br><br>
-                    <label for="locations">where are you from?</label>
-                    <select  name="locations" id="locations">
-                        <option value="" disabled selected>select a location</option>
-                        <optgroup label="Southern CA">
-                            <option value="san-diego">San Diego</option>
-                            <option value="orange-county">Orange County</option>
-                            <option value="los-angeles">Los Angeles</option>
-                            <option value="other-socal">Other (SoCal)</option>
-                        </optgroup>
-                        <optgroup label="Northern CA">
-                            <option value="san-francisco">San Francisco</option>
-                            <option value="san-jose">San Jose</option>
-                            <option value="palo-alto">Palo Alto</option>
-                            <option value="mountain-view">Mountain View</option>
-                            <option value="other-norcal">Other (NorCal)</option>
-                        </optgroup>
-                        <optgroup label="Other (U.S.)">
-                            <option value="west">West</option>
-                            <option value="west">MidWest</option>
-                            <option value="west">SouthWest</option>
-                            <option value="west">SouthEast</option>
-                            <option value="west">NorthEast</option>
-                        </optgroup>
-                    </select><br><br>
-                    <label for="user-type">Select which best applies to you:</label>
-                    <select name="user-types" id="user-type">
-                        <option value="" disabled selected>who are you?</option>
-                        <option value="recruiter">recruiter</option>
-                        <option value="student">student</option>
-                        <option value="other">other</option>
-                    </select><br><br>
-                    <textarea id="user-question" name="user-question" rows="4" cols="50">leave your question here...</textarea><br>
-                    <!-- <input type="submit" value="submit"> -->
-                    <button type="submit">submit</button>
-                </fieldset>
-            </form>
-        </div>
         <div>
             <address>
                 written by <a href="mailto:trishahtong@gmail.com">trisha tong</a><br>
@@ -191,3 +182,26 @@
     </footer>
 </body>
 </html>
+
+<!-- sample contact form
+<form id="contactForm" action="/contact" method="POST" novalidate>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" name="name" required autofocus autocomplete="name">
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age" min="1" max="120" placeholder="e.g., 30" required>
+
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123) 456-7890">
+
+        <label for="website">Website: </label>
+        <input type="url" id="website" name="website" placeholder="https://www.example.com">
+
+        <label for="comments">Comments: </label>
+        <textarea id="comments" name="comments" rows="5" cols="50" maxlength="500" placeholder="Enter your comments here..."></textarea>
+    </fieldset> 
+
+    <button type="submit">submit</button>
+</form> -->

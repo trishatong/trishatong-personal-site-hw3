@@ -1,15 +1,18 @@
 :root {
     --primary-color: #9dbce0;
     --secondary-color: #c5b1d1;
-    --text-color: #000000;
+    --text-color: color(display-p3 0.1 0.1 0.1);
     --background-color: #f9f9f9;
+    --mixed-color: color-mix(in srgb, gray, plum);
 }
 
 body {
+    /* width: 100dvw; */
+    overflow-x: hidden;
     background-color: var(--background-color, white);
     color: var(--text-color, black);
     font-family: 'Tajawal', Verdana, sans-serif;
-    margin: 15px;
+    /* margin: 15px; */
     padding: 0;
 }
 
@@ -45,6 +48,7 @@ h1, h2, h3 {
 }
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +85,47 @@ nav ul li a:hover {
     background-color: #ffffff33;
 }
 
+.home-image img {
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: cover;
+    object-position: center; 
+    border-radius: 8px; /* rounding */
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+/* exclude <th> */
+table tr:not(:has(th)):hover {
+    background-color: color-mix(in srgb, var(--primary-color) 50%, white 50%);
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    width: 100%;
+    /* height: 10dvh; */
+    background-color: var(--primary-color, blue);
+    color: white;
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.hero-section {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -89,5 +134,9 @@ nav ul li a:hover {
    
     nav ul li a {
         font-size: 1rem;
+    }
+
+    .project-image img {
+        height: 150px;
     }
 }
