@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <title>Projects - Trisha Tong</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger">☰</label>
         <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="experiments.html">experiments</a></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="about.html">about</a></li>
+            <ul class="nav-links">
+              <li><a href="index.html">home</a></li>
+              <li><a href="projects.html">projects</a></li>
+              <li><a href="experiments.html">experiments</a></li>
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="about.html">about</a></li>
             </ul>
         </nav>
+        <div class="search">
+            <form action="./search/">
+              <label for="topic">?</label>
+              <input type="search" id="topic" name="q">
+              <button type="submit">search</button>
+            </form>
+        </search>
     </header>
     <main>
         <h1>coming soon...</h1>
         <figure>
-            <picture class="home-image">
+            <picture class="balloon">
                 <source media="(min-width:480px)" srcset="media/images/hot-air-balloon-lg.jpg">                
                 <source media="(min-width:400px)" srcset="media/images/hot-air-balloon-med.jpg">
                 <source media="(min-width:300px)" srcset="media/images/hot-air-balloon-sm.jpg">
