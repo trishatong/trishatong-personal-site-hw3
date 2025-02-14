@@ -147,15 +147,13 @@ nav ul li a:hover {
 }
 
 .home-image {
-
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: auto;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
-    overflow: hidden; /* Ensures border-radius applies */
-    transition: transform 0.3s ease-in-out;
 }
 
 .home-image img {
@@ -168,7 +166,7 @@ nav ul li a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.home-image:hover {
+.home-image img:hover {
     transform: scale(1.05);
 }
 
