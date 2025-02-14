@@ -43,10 +43,18 @@
         <section>
             <h1 id="home-title">welcome to my website!</h1>
         </section>
-        <img id="home-image" src="media/images/sunset.jpg" alt="sunset" width="550" height="300">
+        <!-- <img id="home-image" src="media/images/sunset.jpg" alt="sunset" width="550" height="300"> -->
+
+        <picture class="home-image">
+            <source srcset="media/images/sunset-xl.jpg" media="(min-width: 1025px)">
+            <source srcset="media/images/sunset-lg.jpg" media="(min-width: 769px)">
+            <source srcset="media/images/sunset-med.jpg" media="(min-width: 481px)">
+            <img src="media/images/sunset-sm.jpg" alt="a beautiful sunset">
+        </picture>
+
         <section>
             <h2>currently, I'm...</h2>
-            <p><i>what am i working on?</i></p>
+            <!-- <p><i>what am i working on?</i></p> -->
             <article>
                 <h3>learning as a software engineering apprentice @ <b>Fiber Mountain</b></h3>
                 <details>
@@ -81,19 +89,6 @@
                 </details>
             </article>
         </section>        
-        <!-- show a picture depending on what the user selects -->
-        <section>
-            <h2>even more about me!</h2>
-            <label for="interest-choice">choose a topic:</label>
-            <input type="text" id="interest-choice" name="interest-choice" list="interests">
-            <datalist id="interests">
-                <option value="beach">
-                <option value="hiking">
-                <option value="volleyball">
-            </datalist>
-            <img id="interest-image" src="media/images/hot-air-balloon.jpg" alt="Selected Topic Image" style="display:none; width:200px;"><br><br> <!-- change src -->
-            <p>senior year has been <del>difficult</del> <del>sad</del> <del>scary</del> bittersweet but i'm enjoying every bit of it!</p>
-        </section>  
         <section>
             <h2>briefly me:</h2>
             <dl>
