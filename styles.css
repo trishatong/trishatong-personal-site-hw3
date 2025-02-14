@@ -1,6 +1,7 @@
 :root {
     --primary-color: #9dbce0;
     --secondary-color: #c5b1d1;
+    --text-color: #1a1a1a; /* fallback */
     --text-color: color(display-p3 0.1 0.1 0.1);
     --background-color: #f9f9f9;
     --mixed-color: color-mix(in srgb, gray, plum);
@@ -124,7 +125,28 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f9f9f9;
+    transform: scale(1.1);
     background-color: #ffffff33;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.balloon img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#spin-smile {
+    display: inline-block;  
+    font-size: xx-large;
+    margin: 0;
+    animation: spin 2s linear infinite;
 }
 
 #home-image {
@@ -169,12 +191,14 @@ footer {
     justify-content: center; */
 }
 
-.hero-section {
+/* .hero-section {
     height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
+
+
 
 @media (max-width: 768px) {
     nav ul {
