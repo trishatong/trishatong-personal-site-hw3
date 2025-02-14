@@ -13,7 +13,6 @@ body {
     background-color: var(--background-color, white);
     color: var(--text-color, black);
     font-family: 'Tajawal', Verdana, sans-serif;
-    /* margin: 15px; */
     padding: 0;
 }
 
@@ -97,6 +96,7 @@ header {
     justify-content: flex-end;
     max-width: 100%;
     padding: 0.5rem 1rem;
+    margin-right: 3rem;
 }
 
 nav {
